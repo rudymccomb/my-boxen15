@@ -28,6 +28,7 @@ class people::rudymccomb {
     provider => 'gem',
   }
 
+  include packer
 ####atom editor
   #include atom
 
