@@ -1,5 +1,6 @@
 class people::rudymccomb::applications {
-  include packer
+
+  #include packer
 
   package { 'puppet-lint':
     ensure   => '1.1.0',
