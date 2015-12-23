@@ -28,17 +28,21 @@ class people::rudymccomb {
     provider => 'gem',
   }
 
-  #create home folder directory
-     file { '/Users/shared/test':
-             ensure     => 'directory',
-     }
+  class { 'packer':
+    ensure => present,
+  }
 
-     # Just verify file permissions.
-     file { "/Users/shared/test/RestrictedFile.txt":
-             mode => 755,
-             ensure => present,
-             content => "Nobody read the contents of this file.",
-             }
+  #create home folder directory
+  file { '/Users/shared/test':
+    ensure     => 'directory',
+  }
+
+  # Just verify file permissions.
+  file { "/Users/shared/test/RestrictedFile.txt":
+    mode => 755,
+    ensure => present,
+    content => "Nobody read the contents of this file.",
+  }
 
   ####atom editor
   #include atom
