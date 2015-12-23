@@ -1,5 +1,10 @@
 class people::rudymccomb::applications {
   include packer
+
+  package { 'puppet-lint':
+    ensure   => '1.1.0',
+    provider => 'gem',
+  }
   #include chrome
   #include chrome::canary
   #include virtualbox

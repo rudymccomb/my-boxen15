@@ -3,7 +3,7 @@ class people::rudymccomb {
   # install packages below
   notify { 'class people::rudymccomb declared': }
 
-  #include people::rudymccomb::applications
+  include people::rudymccomb::applications
   #include people::rudymccomb::dotfiles
   #include people::rudymccomb::gitconfig
   #include people::rudymccomb::preferences
