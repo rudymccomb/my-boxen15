@@ -28,9 +28,7 @@ class people::rudymccomb {
     provider => 'gem',
   }
 
-  class { 'packer':
-    ensure => present,
-  }
+  include packer
 
   #create home folder directory
   file { '/Users/shared/test':
