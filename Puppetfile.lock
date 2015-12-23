@@ -59,11 +59,6 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-packer
-  specs:
-    packer (0.6.1)
-
-GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (3.0.0)
@@ -92,6 +87,11 @@ GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.2.1)
+
+GITHUBTARBALL
+  remote: counsyl/puppet-packer
+  specs:
+    packer (0.9.17)
 
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
@@ -123,7 +123,7 @@ DEPENDENCIES
   nginx (= 1.6.0)
   nodejs (= 5.0.0)
   openssl (= 1.0.0)
-  packer (= 0.6.1)
+  packer (= 0.9.17)
   phantomjs (= 3.0.0)
   pkgconfig (= 1.0.0)
   repository (= 2.4.1)
